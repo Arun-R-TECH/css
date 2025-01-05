@@ -1,0 +1,165 @@
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fdfdfd;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:grey;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li{
+    margin-left: 20px;
+}
+
+header nav ul li a{
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero{
+    text-align: center;
+    background-image: url(food_back.jpg);
+    color: white;
+    padding: 100px 20px;
+    height: 80vh;
+}
+
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero .btn{
+     display: inline-block;
+     margin-top: 20px;
+     padding: 10px 20px;
+     background-color: #8b0000;
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     border-radius: 5px;
+
+}
+
+.menu{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+
+}
+
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-items.ITEM{
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-items.ITEM img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.menu-items.ITEM h3{
+    font-size: 1.2rem;
+    margin: 10px 0;
+
+}
+
+.menu-items.ITEM p{
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+
+}
+
+.menu-items.ITEM span{
+    font-weight: bold;
+    color: #8b0000;
+    font-size: 1.1rem;
+
+}
+
+button,.btn{
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease,background-colour 0.3s;
+
+}
+button:hover,.btn:hover{
+    transform: scale(1.1);
+    background-color:grey;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 500px;
+}
+ul li:hover{
+    transform: scale(1.1);
+    background-color:grey;
+
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fadein{
+    animation: fadein 2s ease-in-out;
+}
